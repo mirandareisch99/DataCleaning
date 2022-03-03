@@ -12,9 +12,7 @@ from random import randrange
 #sound.export("transcript.wav", format="wav")
 audio1_directory = "/Users/miranda/PycharmProjects/pythonProject9/new_architecture/wavs/audio3_WAVs_short"
 filenames_1 = os.listdir(audio1_directory)
-print(filenames_1)
 
-print(len(filenames_1))
 
 script_1 = []
 for file in filenames_1:
@@ -36,14 +34,7 @@ for file in filenames_1:
                 except:
                         script_1.append("error")
                         print("error")
-'''rand = []
-rand.extend(range(1, 401))
-identifiers = []
-for i in filenames_1:
-        l3 = [x for x in rand if x not in identifiers]
-        identifiers.append(random.choice(l3))
-print(identifiers)
-print(len(identifiers))'''
+
 
 df_1 = pd.DataFrame()
 df_1["File_Name"] = filenames_1
